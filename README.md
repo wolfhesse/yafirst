@@ -1,6 +1,6 @@
 # Yafirst
 
- TODO: Write a gem description
+TODO: Write a gem description
 
 ## Installation
 
