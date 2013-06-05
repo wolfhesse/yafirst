@@ -1,1 +1,1 @@
-require 'index_adapter'
+require 'yafirst/SysArch/index_adapter'

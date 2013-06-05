@@ -1,4 +1,4 @@
-require 'item'
-require 'line_item'
-require 'money'
-require 'order'
+require 'yafirst/Warenwirtschaft/item'
+require 'yafirst/Warenwirtschaft/line_item'
+require 'yafirst/Warenwirtschaft/money'
+require 'yafirst/Warenwirtschaft/order'
