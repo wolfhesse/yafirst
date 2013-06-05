@@ -2,10 +2,10 @@
 lib = File.expand_path('../lib', __FILE__)
 #puts lib
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'Yafirst/version'
+require 'yafirst/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "Yafirst"
+  spec.name          = "yafirst"
   spec.version       = Yafirst::VERSION
   spec.authors       = ["alpha"]
   spec.email         = ["wolfgang.schuessel@gmail.com"]

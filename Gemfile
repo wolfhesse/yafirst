@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in Yafirst.gemspec
+# Specify your gem's dependencies in yafirst.gemspec
 gemspec
 
 gem 'rspec'
