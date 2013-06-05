@@ -1,16 +1,7 @@
-require('rspec')
+require 'spec_helper'
 
-                                         # spec/awesome_gem/awesome.rb
-APP_ROOT = File.expand_path(File.join(File.dirname(__FILE__), '..', '..'))
-$: << File.join(APP_ROOT, 'lib/yafirst') # so rspec knows where your file could be
-$: << File.join(APP_ROOT, 'lib/yafirst/Petshop')
-$: << File.join(APP_ROOT, 'lib/yafirst/Warenwirtschaft')
-
-require 'vieh'                           # this loads the class you want to test
-require 'order'
-require 'line_item'
-require 'item'
-require 'money'
+require 'petshop'
+require 'warenwirtschaft'
 
 include Yafirst
 include Yafirst::Warenwirtschaft
@@ -31,7 +22,7 @@ end
 
 describe Order do
 
-  it "sums the prices of its line items" do
+  it 'sums the prices of its line items' do
     order = Order.new
     order.add_entry(LineItem.new(:item => Item.new(
         :price => Money.new(1.11, :USD)

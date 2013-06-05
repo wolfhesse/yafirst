@@ -1,1 +1,2 @@
-require 'yafirst/Petshop/vieh'
+require 'yafirst'
+require File.dirname(__FILE__) + '/vieh'

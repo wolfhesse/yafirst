@@ -1,1 +1,2 @@
-require 'yafirst/SysArch/index_adapter'
+
+require File.dirname(__FILE__) + '/index_adapter'

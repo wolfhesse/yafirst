@@ -11,11 +11,11 @@ module Yafirst
       end
 
       def add_filter(params)
-
+        Yafirst.logger.info(params) if Yafirst.logger
       end
 
       def search
-
+        Yafirst.logger.info('searching') if Yafirst.logger
       end
 
       def result
