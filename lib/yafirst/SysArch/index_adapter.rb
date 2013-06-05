@@ -1,6 +1,5 @@
 module Yafirst
   module SysArch
-
     class IndexAdapter
       attr_reader :config
 
