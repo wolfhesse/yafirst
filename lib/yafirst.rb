@@ -7,3 +7,7 @@ module Yafirst
     "yafirst version #{Yafirst::VERSION}"
   end
 end
+
+require 'yafirst/Petshop/petshop'
+require 'yafirst/SysArch/sys_arch'
+require 'yafirst/Warenwirtschaft/warenwirtschaft'
