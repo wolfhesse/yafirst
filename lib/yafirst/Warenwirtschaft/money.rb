@@ -23,6 +23,7 @@ module Yafirst
 
       def == (param)
         return true if param.value == @value && param.currency == @currency
+        false
       end
 
       def * (factor)
