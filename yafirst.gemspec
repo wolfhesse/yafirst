@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = %w(wolfgang.schuessel@gmail.com)
   spec.description   = %q{yasssu adaptive toolbelt}
   spec.summary       = %q{yasssu service adapter}
-  spec.homepage      = ''
+  spec.homepage      = "github: 'wolfhesse/yafirst'"
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
