@@ -7,9 +7,9 @@ require 'yafirst/version'
 Gem::Specification.new do |spec|
   spec.name          = 'yafirst'
   spec.version       = Yafirst::VERSION
-  spec.authors       = %w(alpha)
+  spec.authors       = %w(wolfhesse rogeraaut alpha)
   spec.email         = %w(wolfgang.schuessel@gmail.com)
-  spec.description   = %q{yasssu routines to access fulltext index and semantic engines}
+  spec.description   = %q{yasssu adaptive toolbelt}
   spec.summary       = %q{yasssu service adapter}
   spec.homepage      = ''
   spec.license       = 'MIT'
