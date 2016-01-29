@@ -8,7 +8,7 @@ module Yafirst
       end
 
       def lick_things(i=nil)
-        Yafirst.logger.info(i) if Yafirst.logger
+        Yafirst.logger.info("lick_things called with parameter i => #{i}") if Yafirst.logger
         "#{@name}: is licking things"
       end
     end

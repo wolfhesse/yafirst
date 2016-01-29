@@ -7,15 +7,25 @@ require('spec_helper')
 
 require 'index_adapter'                  # this loads the class you want to test
 
+# include Yafirst
 include Yafirst::SysArch
+
 
 describe IndexAdapter do
   before do
+    Yafirst.logger.level = Logger::INFO
+
     @ya_index = IndexAdapter.new(config: 'woofer!')
   end
+
+  it 'should have a configured logger' do
+    Yafirst.logger.should_not be nil
+  end
+
   it 'should have a config' do
     @ya_index.config.should include 'woofer!'
   end
+
   context '#search topics' do
     it 'should return a sample string' do
       @ya_index.add_filter(:topic => 'wien')
