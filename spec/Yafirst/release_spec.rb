@@ -6,6 +6,6 @@ describe Yafirst do
 
   end
   it 'should have a configured version' do
-    Yafirst::VERSION.should be_eql "0.1.1"
+    Yafirst::VERSION.should be_eql "0.1.2"
   end
 end
