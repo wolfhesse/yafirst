@@ -11,6 +11,6 @@ module Yafirst
   end
 end
 
-require 'yafirst/Petshop/petshop'
-require 'yafirst/SysArch/sys_arch'
-require 'yafirst/Warenwirtschaft/warenwirtschaft'
+require 'yafirst/Petshop/module'
+require 'yafirst/SysArch/module'
+require 'yafirst/Warenwirtschaft/module'
