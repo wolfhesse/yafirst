@@ -25,20 +25,18 @@ describe Order do
   it 'sums the prices of its line items' do
     order = Order.new
     order.add_entry(LineItem.new(:item => Item.new(
-        :price => Money.new(1.11, :USD)
+        price: Money.new(1.11, :USD)
     )))
     order.add_entry(LineItem.new(:item => Item.new(
-        :price    => Money.new(2.22, :USD),
+        :price => Money.new(2.22, :USD),
         :quantity => 2
     )))
-    #expect(order.total).to eq(Money.new(5.55, :USD))
-
 
     expect(order.total).to eq(Money.new(5.55, :USD))
-    expect(order.total2).to eq(Money.new(5.55, :USD))
+    expect(order.total).to eq(Money.new(5.55, :USD))
 
-    order.add_entry(LineItem.new(:item => Item.new(:price => Money.new(2, :USD), :quantity => 3)))
-    expect(order.total).to eq(Money.new(15.99, :USD))
+    order.add_entry(LineItem.new(:item => Item.new(:price => Money.new(2, :USD), :quantity => 5)))
+    expect(order.total).to eq(Money.new(15.55, :USD))
     pp order.entries
   end
 

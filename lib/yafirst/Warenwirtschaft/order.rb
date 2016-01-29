@@ -20,13 +20,6 @@ module Yafirst
         result
       end
 
-      def total2
-        result = Money.new
-        @entries.each { |e| result.add(e.item.price * e.item.quantity) }
-        result.round
-        result
-      end
-
     end
 
   end
