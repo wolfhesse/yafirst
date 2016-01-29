@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-require 'petshop'
-require 'warenwirtschaft'
+# require 'petshop'
+# require 'warenwirtschaft'
 
 
 include Yafirst::Warenwirtschaft
