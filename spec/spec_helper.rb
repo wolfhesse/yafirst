@@ -9,10 +9,18 @@ Spork.prefork do
   # need to restart spork for it take effect.
   APP_ROOT = File.expand_path(File.join(File.dirname(__FILE__), '..'))
 
+  require 'logger'
+
+  require 'yafirst'
+  include Yafirst
+  Yafirst.logger = Logger.new(File.expand_path(File.join(File.dirname(__FILE__), '..', 'tmp', 'logs', 'spec.log')), 5, 8192)
+  Yafirst.logger.level = Logger::INFO
+
 end
 
 Spork.each_run do
   # This code will be run each time you run your specs.
+ Yafirst.logger.info("new run of specs at #{DateTime.now}")
 
 end
 
@@ -44,8 +52,6 @@ end
 #
 # These instructions should self-destruct in 10 seconds.  If they don't, feel
 # free to delete them.
-
-
 
 
 require('rspec')
