@@ -1,4 +1,4 @@
-require 'yafirst'
+# require 'yafirst'
 require File.dirname(__FILE__) + '/item'
 require File.dirname(__FILE__) + '/line_item'
 require File.dirname(__FILE__) + '/money'
