@@ -1,6 +1,5 @@
 require 'spec_helper'
 
-
 require 'petshop'
 require 'warenwirtschaft'
 
